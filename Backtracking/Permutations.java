@@ -16,7 +16,7 @@ Output:
 */
 
 class Solution {
-    public List<List<Integer>> permute(int[] nums) {
+    public List<List<Integer>> permute(int[] nums)
         List<List<Integer>> ans = new ArrayList<>();
         backtrack(ans, new ArrayList<Integer>(), nums, new boolean[nums.length]);
         return ans;
@@ -24,7 +24,7 @@ class Solution {
     
     public void backtrack(List<List<Integer>>ans, List<Integer> perm, int[] nums, boolean[] used) {
         if(perm.size() == nums.length) {
-            ans.add(new ArrayList<>(perm));
+            ans.add(new ArrayList<>(perm));  // O(n) time, O(n) space
             return;
         }
         
@@ -39,3 +39,11 @@ class Solution {
         }
     }
 }
+
+/*
+Time complexity : O(N * N!) where N! is due to number of permutations and N is the work done in base case.
+Space complexity : O(N * N!) each permuations require O(N) space and there are N! permutations.
+in case, we need to just print the permutations, then space complexity would be O(N) as The depth of recursion
+tree would be N. 
+
+
