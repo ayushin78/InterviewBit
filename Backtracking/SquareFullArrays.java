@@ -17,7 +17,7 @@
 	*     A = [1, 17, 8]
 	* Output 2:
 	*     2
-	* /
+	*/
 public class Solution {
     public int solve(ArrayList<Integer> arr) {
         ArrayList<ArrayList<Integer>> ans = new ArrayList<ArrayList<Integer>>();
