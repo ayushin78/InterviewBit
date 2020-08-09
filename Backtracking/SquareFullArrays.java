@@ -1,4 +1,4 @@
-	* 
+	/* 
 	* Given an array of integers A, the array is squareful if for every pair of adjacent elements, their sum is a perfect square. Find and return the number of permutations of A that are squareful. Two permutations A1 and A2 differ if and only if there is some index i such that A1[ i ] != A2[ i ]. 
 	* Input Format
 	* The only argument given is the integer array A.
@@ -17,7 +17,7 @@
 	*     A = [1, 17, 8]
 	* Output 2:
 	*     2
-	* 
+	* /
 public class Solution {
     public int solve(ArrayList<Integer> arr) {
         ArrayList<ArrayList<Integer>> ans = new ArrayList<ArrayList<Integer>>();
