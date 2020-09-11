@@ -1,2 +1,2 @@
-- max profit on array of wine.
+- Max profit from sales of wine
 - 
